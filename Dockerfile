@@ -21,4 +21,4 @@ RUN apt update \
 
  
 # Run bot script:
-CMD nohup java   -jar  /home/jack-of-all-trades-2.1.26.jar --joal-conf="/home/"
+CMD bash /home/startbot.sh
