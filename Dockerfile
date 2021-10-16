@@ -1,10 +1,6 @@
 
 FROM adoptopenjdk:11.0.11_9-jre-hotspot
 
-LABEL name="joal"
-LABEL maintainer="joal.contact@gmail.com"
-LABEL url="https://github.com/anthonyraymond/joal"
-LABEL vcs-url="https://github.com/anthonyraymond/joal"
 
 WORKDIR /joal/
 # Copy files:
