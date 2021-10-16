@@ -16,7 +16,7 @@ RUN apt update \
 && wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
 && pwd \
 && ls \
-&& tar -zxvf /home/ joal.tar.gz
+&& tar -zxvf joal.tar.gz
 
  
 # Run bot script:
