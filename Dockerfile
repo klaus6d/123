@@ -11,9 +11,8 @@ COPY extras.sh /home/
 
 VOLUME /data
 
-ENTRYPOINT ["java","-jar","/joal/joal.jar"]
-CMD ["--joal-conf=/data"]
-RUN apt install wget \
+RUN apt update \
+&& apt install wget \
 && wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
 && tar -zxvf joal.tar.gz /home.joal
 
