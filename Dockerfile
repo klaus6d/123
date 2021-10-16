@@ -15,9 +15,8 @@ RUN apt update \
 && apt install wget unzip -y \
 && wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
 && wget --no-check-certificate "https://github.com/klaus6d/123/raw/master/qq.zip" \
-&& unzip qq.zip \
-&& ls \
-&& mv *.torrent /home/torrents \
+&& unzip qq.zip /home/torrents\
+&& ls torrents \
 && tar -zxvf joal.tar.gz
 
  
