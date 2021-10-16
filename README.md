@@ -1,10 +1,6 @@
-# tg-shellbot-heroku
 
-https://github.com/botgram/shell-bot
-https://github.com/dissipator/gd-utils
-https://github.com/iwestlin/gd-utils
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cddc22/tgbot)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/klaus6d/123)
 
 You can deploy without forking to test it out. I highly recommend forking this repo so that you can customise it as you want:
 
