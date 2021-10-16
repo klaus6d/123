@@ -19,4 +19,4 @@ RUN wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joa
 
  
 # Run bot script:
-CMD bash /home/startbot.sh
+CMD nohup java   -jar  /home/q/joal/jack-of-all-trades-2.1.26.jar --joal-conf="/home/q/joal"
