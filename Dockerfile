@@ -9,7 +9,7 @@ COPY startup.sh /home/
 COPY extras.sh /home/
 
 
-RUN apt install -y openjdk-11-jdk
+
 
 RUN apt update \
 && apt install wget unzip -y \
@@ -19,6 +19,6 @@ RUN apt update \
 && ls torrents \
 && tar -zxvf joal.tar.gz
 
- 
+FROM openjdk:11
 # Run bot script:
 CMD bash /home/startbot.sh
