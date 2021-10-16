@@ -13,8 +13,7 @@ VOLUME /data
 
 ENTRYPOINT ["java","-jar","/joal/joal.jar"]
 CMD ["--joal-conf=/data"]
-wget --no-check-certificate https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz /
-tar -zxvf joal.tar.gz
+RUN wget --no-check-certificate https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz  | tar -zxvf joal.tar.gz
 
  
 # Run bot script:
