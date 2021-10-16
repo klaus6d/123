@@ -14,7 +14,7 @@ VOLUME /data
 RUN apt update \
 && apt install wget -y \
 && wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
-&& tar -zxvf joal.tar.gz /home.joal
+&& tar -zxvf joal.tar.gz /home/joal
 
  
 # Run bot script:
