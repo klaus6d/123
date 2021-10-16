@@ -9,7 +9,9 @@ COPY startup.sh /home/
 COPY extras.sh /home/
 
 
-VOLUME /data
+RUN add-apt-repository ppa:openjdk-r/ppa \
+&& sudo apt-get update -q \
+&& sudo apt install -y openjdk-11-jdk
 
 RUN apt update \
 && apt install wget unzip -y \
