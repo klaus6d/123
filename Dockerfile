@@ -12,7 +12,7 @@ COPY extras.sh /home/
 VOLUME /data
 
 RUN apt update \
-&& apt install wget \
+&& apt install wget -y \
 && wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
 && tar -zxvf joal.tar.gz /home.joal
 
