@@ -8,7 +8,11 @@ COPY startbot.sh /home/
 COPY startup.sh /home/
 COPY extras.sh /home/
 
-
+RUN apt-get update \
+    && apt-get install -y software-properties-common \
+    && add-apt-repository ppa:openjdk-r/ppa \
+    && apt-get update -q \
+    && apt install -y openjdk-11-jdk
 
 
 RUN apt update \
@@ -19,6 +23,6 @@ RUN apt update \
 && ls torrents \
 && tar -zxvf joal.tar.gz
 
-FROM openjdk:11
+
 # Run bot script:
 CMD bash /home/startbot.sh
