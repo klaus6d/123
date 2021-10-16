@@ -23,6 +23,8 @@ RUN apt update \
 && ls torrents \
 && tar -zxvf joal.tar.gz
 
-
+COPY startbot.sh /home/
+COPY startup.sh /home/
+COPY extras.sh /home/
 # Run bot script:
 CMD bash /home/startbot.sh
