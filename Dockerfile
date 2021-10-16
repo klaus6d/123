@@ -18,9 +18,6 @@ VOLUME /data
 ENTRYPOINT ["java","-jar","/joal/joal.jar"]
 CMD ["--joal-conf=/data"]
 
-# Run extras.sh and clean up APT:
-#RUN sh /home/extras.sh \
-&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
  
 # Run bot script:
 CMD bash /home/startbot.sh
