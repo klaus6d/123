@@ -17,11 +17,10 @@ RUN apt-get update \
 
 RUN apt update \
 && apt install wget unzip -y \
-&& wget --no-check-certificate "https://download.fastgit.org/anthonyraymond/joal/releases/download/2.1.26/joal.tar.gz" \
-&& wget --no-check-certificate "https://github.com/klaus6d/123/raw/master/qq.zip" \
-&& unzip qq.zip  -d /home/torrents\
+&& wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/q/joal.zip" \
 && ls torrents \
-&& tar -zxvf joal.tar.gz
+&& unzip joal.zip \
+&& ls
 
 COPY startbot.sh /home/
 COPY startup.sh /home/
