@@ -18,7 +18,7 @@ RUN apt-get update \
 RUN apt update \
 && apt install wget unzip -y \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/q/joal.zip" \
-&& ls torrents \
+&& pwd \
 && unzip joal.zip \
 && ls
 
