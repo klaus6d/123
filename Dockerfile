@@ -23,5 +23,5 @@ COPY startup.sh /home/
 COPY extras.sh /home/
 COPY --from=joal /home/joal /home/joal
 # Run bot script:
-CMD [nohup java   -jar  /home/joal/jack-of-all-trades-2.1.26.jar --joal-conf="/home/joal/"]
+CMD java -jar  /home/joal/jack-of-all-trades-2.1.26.jar
 
