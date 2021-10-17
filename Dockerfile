@@ -1,5 +1,6 @@
 
-FROM ubuntu:latest
+
+FROM ubuntu:latest as joal
 
 
 WORKDIR /home/
@@ -8,22 +9,18 @@ COPY startbot.sh /home/
 COPY startup.sh /home/
 COPY extras.sh /home/
 
-RUN apt-get update \
-    && apt-get install -y software-properties-common \
-    && add-apt-repository ppa:openjdk-r/ppa \
-    && apt-get update -q \
-    && apt install -y openjdk-11-jdk
-
-
 RUN apt update \
 && apt install wget unzip -y \
-&& wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/q/joal.zip" \
-&& pwd \
-&& unzip joal.zip \
+&& wget --no-check-certificate "https://github.com/klaus6d/123/raw/master/qq.zip" \
+&& mkdir joal \
+&& unzip qq.zip -d joal \
 && ls
+
+FROM lpicanco/java11-alpine
 
 COPY startbot.sh /home/
 COPY startup.sh /home/
 COPY extras.sh /home/
+COPY --from=joal /home/joal /home/joal
 # Run bot script:
 CMD bash /home/startbot.sh
