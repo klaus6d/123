@@ -10,4 +10,4 @@
 echo "Loading startup.sh..."
 #bash /home/startup.sh
 echo "Starting Bot..."
-nohup java   -jar  /home/jack-of-all-trades-2.1.26.jar --joal-conf="/home/"
+nohup java   -jar  /home/joal/jack-of-all-trades-2.1.26.jar --joal-conf="/home/"
