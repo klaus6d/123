@@ -14,7 +14,7 @@ RUN apt update \
 && unzip joal.zip -d joal \
 && ls
 
-FROM lpicanco/java11-alpine
+FROM adoptopenjdk:11.0.11_9-jre-hotspot
 
 COPY startbot.sh /home/
 COPY startup.sh /home/
